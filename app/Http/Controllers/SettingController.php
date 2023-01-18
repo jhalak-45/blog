@@ -66,7 +66,7 @@ class SettingController extends Controller
             if ($request->homepage_image) {
                 $old = $setting->homepage_image;
                 if ($old) {
-                    Storage::delete($old);
+                    // Storage::delete($old);
                 }
                 // File::delete(public_path() . '/uploads' . $old);
 
