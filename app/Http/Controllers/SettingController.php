@@ -40,9 +40,9 @@ class SettingController extends Controller
                     Storage::delete($oldImage);
                 }
                 $ext = $request->image->getClientOriginalExtension();
-                $newFileName = time() . '.' . $ext;
-                $request->image->move(public_path() . '/uploads', $newFileName); // This will save file in a folder
-
+                $newFileName = time() . 'img.' . $ext;
+                // $request->image->move(public_path() . '/uploads', $newFileName); // This will save file in a folder
+                $request->file('image')->storeAs('uploads', $newFileName);
                 $setting->image = $newFileName;
                 $setting->save();
                 // if ($oldImage) {
@@ -57,11 +57,11 @@ class SettingController extends Controller
                 }
                 $ext = $request->cv->getClientOriginalExtension();
                 $newFileName = time() . 'cv.' . $ext;
-                $request->cv->move(public_path() . '/uploads', $newFileName); // This will save file in a folder
+                // $request->cv->move(public_path() . '/uploads', $newFileName); // This will save file in a folder
+                $request->file('cv')->storeAs('uploads', $newFileName);
 
                 $setting->cv = $newFileName;
                 $setting->save();
-
             }
             if ($request->homepage_image) {
                 $old = $setting->homepage_image;
@@ -72,7 +72,8 @@ class SettingController extends Controller
 
                 $ext = $request->homepage_image->getClientOriginalExtension();
                 $newFileName = time() . 'bg.' . $ext;
-                $request->homepage_image->move(public_path() . '/uploads', $newFileName); // This will save file in a folder
+                // $request->homepage_image->move(public_path() . '/uploads', $newFileName); // This will save file in a folder
+                $request->file('homepage_image')->storeAs('uploads', $newFileName);
 
                 $setting->homepage_image = $newFileName;
                 $setting->save();

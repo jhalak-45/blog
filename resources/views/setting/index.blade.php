@@ -37,7 +37,7 @@
                                     <input type="file" id="img" name="image"
                                         class="
                                         block w-full text-sm text-slate-500 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-violet-50 file:text-violet-700 hover:file:bg-violet-100">
-                                    <img src="{{ asset('uploads/' . $setting->image) }}" alt="jhalak dhami image "
+                                    <img src="{{ asset('storage/uploads/' . $setting->image) }}" alt="jhalak dhami image "
                                         height="100px" width="100px">
                                 </div>
 
@@ -50,7 +50,7 @@
                                 <div class="d-flex">
                                     <input type="file" id="cv" name="cv" class="block w-full text-sm text-slate-500 file:mr-4 file:py-2 file:px-4 file:rounded-full focus:border-0 file:border-0 file:text-sm file:font-semibold file:bg-violet-50 file:text-violet-700 hover:file:bg-violet-100">
 
-                                    <a href="{{ asset('uploads/' . $setting->cv) }}" class="btn-sm  btn-primary">View
+                                    <a href="{{ asset('storage/uploads/' . $setting->cv) }}" class="btn-sm  btn-primary">View
                                     </a>
                                 </div>
 
@@ -61,7 +61,7 @@
                                     <input type="file" id="img" name="homepage_image"
                                         class="
                                         block w-full text-sm text-slate-500 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-violet-50 file:text-violet-700 hover:file:bg-violet-100">
-                                    <img src="{{ asset('uploads/' . $setting->homepage_image) }}"
+                                    <img src="{{ asset('storage/uploads/' . $setting->homepage_image) }}"
                                         alt="jhalak dhami image " height="100px" width="100px">
                                 </div>
 

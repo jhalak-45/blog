@@ -11,7 +11,7 @@ class Contactd extends Model
     protected $table='contact_details';
     protected $primarykey='id';
 
-    protected $fillable=['name','email','address','website','facebook','github','info','contact'];
+    protected $fillable=['name','email','address','website','facebook','github','info','contact_number'];
 
 
 }

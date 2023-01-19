@@ -11,7 +11,7 @@
             Visit
 
         </a>
-        <div class="details py-3"
+        <div class="details container py-3"
             style="font-family: 'Nunito',sans-serif; font-size:18px; line-height:28px;word-spacing:4px;">
             {!! $project->description !!}
         </div>

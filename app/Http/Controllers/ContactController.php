@@ -34,6 +34,7 @@ class ContactController extends Controller
 
 
 
+
     // public function dash()
     // {
     //     $contacts = Contact::orderBy('id','Desc')->paginate(4);

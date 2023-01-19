@@ -49,7 +49,7 @@
                 </div>
                 <div class="col-md-6 ">
                     <div class="image d-flex justi-content-center">
-                        <img  src="{{ asset('uploads/' . $data->homepage_image) }}">
+                        <img  src="{{ asset('storage/uploads/' . $data->homepage_image) }}">
 
                     </div>
 
